@@ -1,0 +1,155 @@
+<h2>{{titulo}}</h2>
+<div>
+  <table>
+    <tr>
+      <!-- Consulta 1 -->
+      <th *ngIf="id ==='1'">Profesional</th>
+      <th *ngIf="id ==='1'">Total</th>
+      <!-- Consulta 2 -->
+      <th *ngIf="id ==='2'">Pais</th>
+      <th *ngIf="id ==='2'">Region</th>
+      <th *ngIf="id ==='2'">Respuestas</th>
+      <!-- Consulta 3 -->
+      <th *ngIf="id ==='3'">Nombre</th>
+      <th *ngIf="id ==='3'">Area</th>
+      <!-- Consulta 4 -->
+      <th *ngIf="id ==='4'">Area</th>
+      <th *ngIf="id ==='4'">Subalterno</th>
+      <th *ngIf="id ==='4'">Jefe</th>
+      <!-- Consulta 5 -->
+      <th *ngIf="id ==='5'">Nombre</th>
+      <th *ngIf="id ==='5'">Salario</th>
+      <th *ngIf="id ==='5'">Area</th>
+      <th *ngIf="id ==='5'">Promedio</th>
+      <!-- Consulta 6 -->
+      <th *ngIf="id ==='6'">Pais</th>
+      <th *ngIf="id ==='6'">Total</th>
+      <!-- Consulta 7 -->
+      <th *ngIf="id ==='7'">Nombre</th>
+      <th *ngIf="id ==='7'">Año</th>
+      <!-- Consulta 8 -->
+      <th *ngIf="id ==='8'">Inicial</th>
+      <th *ngIf="id ==='8'">Total</th>
+      <!-- Consulta 9 -->
+      <th *ngIf="id ==='9'">Invento</th>
+      <th *ngIf="id ==='9'">Inventor</th>
+      <!-- Consulta 10 -->
+      <th *ngIf="id ==='10'">Nombre</th>
+      <th *ngIf="id ==='10'">Año</th>
+      <!-- Consulta 11 -->
+      <th *ngIf="id ==='11'">Pais</th>
+      <th *ngIf="id ==='11'">Area</th>
+      <th *ngIf="id ==='11'">Fronteras</th>
+      <!-- Consulta 12 -->
+      <th *ngIf="id ==='12'">idInvento</th>
+      <th *ngIf="id ==='12'">Invento</th>
+      <!-- Consulta 13 -->
+      <th *ngIf="id ==='13'">Nombre</th>
+      <th *ngIf="id ==='13'">Salario</th>
+      <th *ngIf="id ==='13'">Comision</th>
+      <th *ngIf="id ==='13'">Total Salario</th>
+      <!-- Consulta 14 -->
+      <th *ngIf="id ==='14'">Encuesta</th>
+      <th *ngIf="id ==='14'">Total</th>
+      <!-- Consulta 15 -->
+      <th *ngIf="id ==='15'">Nombre</th>
+      <th *ngIf="id ==='15'">Poblacion</th>
+      <th *ngIf="id ==='15'">Total</th>
+      <!-- Consulta 16 -->
+      <th *ngIf="id ==='16'">Profesional</th>
+      <th *ngIf="id ==='16'">Area</th>
+      <th *ngIf="id ==='16'">Jefe</th>
+      <!-- Consulta 17 -->
+      <th *ngIf="id ==='17'">Invento</th>
+      <th *ngIf="id ==='17'">Año</th>
+      <!-- Consulta 18 -->
+      <th *ngIf="id ==='18'">Nombre</th>
+      <th *ngIf="id ==='18'">Poblacion</th>
+      <th *ngIf="id ==='18'">Area</th>
+      <th *ngIf="id ==='18'">Area Japon</th>
+      <!-- Consulta 19 -->
+      <th *ngIf="id ==='19'">Pais</th>
+      <th *ngIf="id ==='19'">FronteraCon</th>
+      <th *ngIf="id ==='19'">Cantidad</th>
+      <!-- Consulta 20 -->
+      <th *ngIf="id ==='20'">Profesional</th>
+      <th *ngIf="id ==='20'">Salario</th>
+      <th *ngIf="id ==='20'">Comision</th>
+    </tr>
+    <tr *ngFor="let datos of data">
+      <!-- Consulta 1 -->
+      <td *ngIf="id ==='1'">{{datos.Profesional}}</td>
+      <td *ngIf="id ==='1'">{{datos.Total}}</td>
+      <!-- Consulta 2 -->
+      <td *ngIf="id ==='2'">{{datos.Pais}}</td>
+      <td *ngIf="id ==='2'">{{datos.Region}}</td>
+      <td *ngIf="id ==='2'">{{datos.Respuestas}}</td>
+      <!-- Consulta 3 -->
+      <td *ngIf="id ==='3'">{{datos.nombre}}</td>
+      <td *ngIf="id ==='3'">{{datos.area}}</td>
+      <!-- Consulta 4 -->
+      <td *ngIf="id ==='4'">{{datos.Area}}</td>
+      <td *ngIf="id ==='4'">{{datos.Subalterno}}</td>
+      <td *ngIf="id ==='4'">{{datos.Jefe}}</td>
+      <!-- Consulta 5 -->
+      <td *ngIf="id ==='5'">{{datos.nombre}}</td>
+      <td *ngIf="id ==='5'">{{datos.salario}}</td>
+      <td *ngIf="id ==='5'">{{datos.area}}</td>
+      <td *ngIf="id ==='5'">{{datos.promedio}}</td>
+      <!-- Consulta 6 -->
+      <td *ngIf="id ==='6'">{{datos.pais}}</td>
+      <td *ngIf="id ==='6'">{{datos.Total}}</td>
+      <!-- Consulta 7 -->
+      <td *ngIf="id ==='7'">{{datos.nombre}}</td>
+      <td *ngIf="id ==='7'">{{datos.anio}}</td>
+      <!-- Consulta 8 -->
+      <td *ngIf="id ==='8'">{{datos.Inicial}}</td>
+      <td *ngIf="id ==='8'">{{datos.Total}}</td>
+      <!-- Consulta 9 -->
+      <td *ngIf="id ==='9'">{{datos.Invento}}</td>
+      <td *ngIf="id ==='9'">{{datos.Inventor}}</td>
+      <!-- Consulta 10 -->
+      <td *ngIf="id ==='10'">{{datos.nombre}}</td>
+      <td *ngIf="id ==='10'">{{datos.anio}}</td>
+      <!-- Consulta 11 -->
+      <td *ngIf="id ==='11'">{{datos.Pais}}</td>
+      <td *ngIf="id ==='11'">{{datos.Area}}</td>
+      <td *ngIf="id ==='11'">{{datos.Fronteras}}</td>
+      <!-- Consulta 12 -->
+      <td *ngIf="id ==='12'"></td>
+      <td *ngIf="id ==='12'"></td>
+      <!-- Consulta 13 -->
+      <td *ngIf="id ==='13'">{{datos.nombre}}</td>
+      <td *ngIf="id ==='13'">{{datos.salario}}</td>
+      <td *ngIf="id ==='13'">{{datos.comision}}</td>
+      <td *ngIf="id ==='13'">{{datos.TotalSalario}}</td>
+      <!-- Consulta 14 -->
+      <td *ngIf="id ==='14'">{{datos.Encuesta}}</td>
+      <td *ngIf="id ==='14'">{{datos.Total}}</td>
+      <!-- Consulta 15 -->
+      <td *ngIf="id ==='15'">{{datos.nombre}}</td>
+      <td *ngIf="id ==='15'">{{datos.poblacion}}</td>
+      <td *ngIf="id ==='15'">{{datos.total}}</td>
+      <!-- Consulta 16 -->
+      <td *ngIf="id ==='16'">{{datos.Profesional}}</td>
+      <td *ngIf="id ==='16'">{{datos.Area}}</td>
+      <td *ngIf="id ==='16'">{{datos.Jefe}}</td>
+      <!-- Consulta 17 -->
+      <td *ngIf="id ==='17'">{{datos.Invento}}</td>
+      <td *ngIf="id ==='17'">{{datos.Anio}}</td>
+      <!-- Consulta 18 -->
+      <td *ngIf="id ==='18'">{{datos.nombre}}</td>
+      <td *ngIf="id ==='18'">{{datos.poblacion}}</td>
+      <td *ngIf="id ==='18'">{{datos.area}}</td>
+      <td *ngIf="id ==='18'">{{datos.AreaJapon}}</td>
+      <!-- Consulta 19 -->
+      <td *ngIf="id ==='19'">{{datos.Pais}}</td>
+      <td *ngIf="id ==='19'">{{datos.FronteraCon}}</td>
+      <td *ngIf="id ==='19'">{{datos.Cantidad}}</td>
+      <!-- Consulta 20 -->
+      <td *ngIf="id ==='20'">{{datos.Profesional}}</td>
+      <td *ngIf="id ==='20'">{{datos.Salario}}</td>
+      <td *ngIf="id ==='20'">{{datos.Comision}}</td>
+    </tr>
+  </table>
+</div>
